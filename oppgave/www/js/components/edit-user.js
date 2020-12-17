@@ -10,7 +10,19 @@ class EditUser extends LitElement {
   render() {
       return html`
         <div>
-        	<li>${this.user.uname}</li>
+          <form>
+          <p> Brukernavn: ${this.user.uname}</p>
+          <li> Endre brukernavn: <input type="text" id="brukernavn" name="brukernavn"></li>
+
+        	<p> Fornavn: ${this.user.firstName}</p>
+          <li> Endre fornavn: <input type="text" id="brukernavn" name="brukernavn"></li>
+
+          <p> Etternavn: ${this.user.lastName}</p>
+          <li> Endre etternavn: <input type="text" id="brukernavn" name="brukernavn"></li> <br>
+          <li> Endre passord: <input type="text" id="passord" name="passord"></li>
+
+          <button type="knapp" id="knapp">Utfør</button>
+          <form>
         </div>
       `;
     }
