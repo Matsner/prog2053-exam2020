@@ -7,7 +7,13 @@ class EditUser extends LitElement {
     };
   }
 
-  // din kode her
+  render() {
+      return html`
+        <div>
+        	<li>${this.user.uname}</li>
+        </div>
+      `;
+    }
 
 }
 customElements.define('edit-user', EditUser);
