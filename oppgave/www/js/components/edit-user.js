@@ -10,7 +10,7 @@ class EditUser extends LitElement {
   render() {
       return html`
         <div>
-          <form>
+          <form action="api/updateUser.php", methode="POST">
           <p> Brukernavn: ${this.user.uname}</p>
           <li> Endre brukernavn: <input type="text" id="brukernavn" name="brukernavn"></li>
 
@@ -22,6 +22,7 @@ class EditUser extends LitElement {
           <li> Endre passord: <input type="text" id="passord" name="passord"></li>
 
           <button type="knapp" id="knapp">Utfør</button>
+          
           <form>
         </div>
       `;
